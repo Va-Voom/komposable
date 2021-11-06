@@ -77,7 +77,7 @@ module Komposable
       @klass_singular = @klass_name.singularize
       @index_path = [@namespace, @klass_name.to_sym]
       @new_path = if @namespace != 'komposable'
-                    [:new, @namespace, @klass_singular.to_sym]
+                    [:new, @namespace.to_sym, @klass_singular.to_sym]
                   else
                     [:new, @klass_singular.to_sym]
                   end

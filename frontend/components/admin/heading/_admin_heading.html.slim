@@ -21,7 +21,7 @@
         - if @item.persisted? && policy(@item).destroy?
           = c "admin/button",
               text: t("destroy", scope: "actions"),
-              href: @item_path || [@namespace, @item],
+              href: @item_path || [@namespace.to_sym, @item],
               modifiers: "as-link is-red",
               data: {\
                 confirm: t(\

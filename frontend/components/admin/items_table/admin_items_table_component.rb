@@ -6,7 +6,7 @@ module AdminItemsTableComponent
 
   def edit_path(item)
     if controller_namespace != 'komposable'
-      [:edit, controller_namespace, item]
+      [:edit, controller_namespace.to_sym, item]
     else
       [:edit, item]
     end
@@ -14,7 +14,7 @@ module AdminItemsTableComponent
 
   def item_path(item)
     if controller_namespace != 'komposable'
-      [controller_namespace, item]
+      [controller_namespace.to_sym, item]
     else
       item
     end
