@@ -9,9 +9,9 @@ module Komposable
 
     def set_class_variables(class_name = nil)
       super
-      @index_path = [komposable, @klass_name.to_sym]
+      @index_path = [komposable.to_sym, @klass_name.to_sym]
       @new_path = if @namespace != 'komposable'
-                    [komposable, :new, @namespace.to_sym, @klass_singular.to_sym]
+                    [komposable.to_sym, :new, @namespace.to_sym, @klass_singular.to_sym]
                   else
                     [:new, @klass_singular.to_sym]
                   end

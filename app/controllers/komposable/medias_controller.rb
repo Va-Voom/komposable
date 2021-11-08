@@ -9,7 +9,7 @@ module Komposable
 
     def show
       set_item
-      @index_path = [komposable, :medias]
+      @index_path = [komposable.to_sym, :medias]
     end
 
     private
