@@ -1,1 +1,1 @@
-import "components/blocks/rich_text_block/rich_text_block";
+import "./rich_text_block/rich_text_block";

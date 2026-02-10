@@ -1,4 +1,4 @@
-import { Controller } from "stimulus";
+import { Controller } from "@hotwired/stimulus";
 import "./rich_text_block.css";
 import "quill/dist/quill.snow.css";
 import Quill from "quill";

@@ -1,5 +1,5 @@
 import A11yDialog from 'a11y-dialog';
-import { Controller } from "stimulus"
+import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   connect() {

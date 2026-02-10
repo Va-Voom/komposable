@@ -1,6 +1,5 @@
 import application from "stimulus_application";
-import { definitionsFromContext } from "stimulus/webpack-helpers";
+import AdminItemsGridController from "./admin_items_grid_controller";
 import "./admin_items_grid.css";
 
-const context = require.context('./', true, /_controller\.js$/);
-application.load(definitionsFromContext(context));
+application.register("admin-items-grid", AdminItemsGridController);

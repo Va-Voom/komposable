@@ -1,6 +1,5 @@
 import application from "stimulus_application";
-import { definitionsFromContext } from "stimulus/webpack-helpers";
+import AdminItemsTableController from "./admin_items_table_controller";
 import "./admin_items_table.css";
 
-const context = require.context('./', true, /_controller\.js$/);
-application.load(definitionsFromContext(context));
+application.register("admin-items-table", AdminItemsTableController);
