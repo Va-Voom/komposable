@@ -27,7 +27,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 0.2rem color(var(--brand-color) shade(30%) alpha(0.5));
+    box-shadow: 0 0 0 0.2rem color-mix(in srgb, color-mix(in srgb, var(--brand-color), black 30%) 50%, transparent);
     outline: none;
   }
 
@@ -41,12 +41,12 @@
     font-weight: 500;
 
     &:focus {
-      box-shadow: 0 0 0 0.2rem color(var(--color-primary) alpha(0.5));
+      box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--color-primary) 50%, transparent);
     }
   }
 
   &.is-secondary {
-    color: color(var(--brand-bg-color) shade(40%));
+    color: color-mix(in srgb, var(--brand-bg-color), black 40%);
   }
 
   &.as-link {

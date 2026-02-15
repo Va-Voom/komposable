@@ -31,7 +31,7 @@
 
     &:focus {
       box-shadow: 0 0 0 0.2rem
-        color(var(--brand-bg-color) shade(20%) alpha(0.75));
+        color-mix(in srgb, color-mix(in srgb, var(--brand-bg-color), black 20%) 75%, transparent);
       outline: none;
     }
 
@@ -42,8 +42,8 @@
       &:after {
         background: repeating-linear-gradient(
           45deg,
-          color(var(--brand-bg-color) shade(5%)),
-          color(var(--brand-bg-color) shade(5%)) 1rem,
+          color-mix(in srgb, var(--brand-bg-color), black 5%),
+          color-mix(in srgb, var(--brand-bg-color), black 5%) 1rem,
           var(--white) 1rem,
           var(--white) 2rem
         );
@@ -97,7 +97,7 @@
     }
 
     &-overlay {
-      background: color(var(--brand-bg-color) shade(10%) alpha(0.75));
+      background: color-mix(in srgb, color-mix(in srgb, var(--brand-bg-color), black 10%) 75%, transparent);
       bottom: 0;
       cursor: pointer;
       left: 0;

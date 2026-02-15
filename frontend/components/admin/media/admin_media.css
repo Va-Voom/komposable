@@ -26,7 +26,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 0.2rem color(var(--brand-color) shade(30%) alpha(0.5));
+    box-shadow: 0 0 0 0.2rem color-mix(in srgb, color-mix(in srgb, var(--brand-color), black 30%) 50%, transparent);
     outline: none;
   }
 

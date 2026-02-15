@@ -13,7 +13,7 @@
   /* Set the client brand color, so it can be reused in the admin */
   --brand-color: #ffd700;
   --brand-bg-color: #fffbed;
-  --border-color: color(var(--brand-bg-color) shade(10%));
+  --border-color: color-mix(in srgb, var(--brand-bg-color), black 10%);
 
   /* Main colors */
   --color-primary: #62bb6d;
@@ -24,7 +24,7 @@
   --red: #db4b4b;
   --yellow: #ffd700;
   --green: #62bb6d;
-  --lightyellow: color(var(--yellow) lightness(+30%));
+  --lightyellow: color-mix(in srgb, var(--yellow), white 30%);
   --blue: #6990f2;
 
   /* Shades of gray */

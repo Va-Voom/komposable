@@ -15,7 +15,7 @@
 
   thead {
     th {
-      border-bottom: 0.2rem solid color(var(--brand-bg-color) shade(10%));
+      border-bottom: 0.2rem solid color-mix(in srgb, var(--brand-bg-color), black 10%);
       vertical-align: bottom;
       white-space: nowrap;
     }
@@ -32,11 +32,11 @@
 
     th,
     td {
-      border-bottom: 0.1rem solid color(var(--brand-bg-color) shade(10%));
+      border-bottom: 0.1rem solid color-mix(in srgb, var(--brand-bg-color), black 10%);
     }
 
     em {
-      color: color(var(--brand-bg-color) shade(40%));
+      color: color-mix(in srgb, var(--brand-bg-color), black 40%);
     }
 
     img {

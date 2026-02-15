@@ -4,7 +4,7 @@
   max-width: 60rem;
 
   &-footer {
-    border-top: 1px solid color(var(--brand-bg-color) shade(20%));
+    border-top: 1px solid color-mix(in srgb, var(--brand-bg-color), black 20%);
     margin-top: 2rem;
     padding-top: 1rem;
     text-align: right;
