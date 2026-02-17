@@ -26,9 +26,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "komponent", "~> 3.0.0.beta1"
   spec.add_dependency "pundit", "~> 2.0"
   spec.add_dependency "sorcery", "~> 0.16"
-  spec.add_development_dependency "aruba"
-  spec.add_development_dependency "bundler", "~> 2.1.4"
-  spec.add_development_dependency "cucumber"
-  spec.add_development_dependency "rails", "~> 5.2"
-  spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "rake"
 end
