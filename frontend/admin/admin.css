@@ -31,8 +31,8 @@ body {
   overflow-x: hidden;
 }
 
-/* Turbolinks */
-.turbolinks-progress-bar {
+/* Turbo */
+.turbo-progress-bar {
   height: 0.3rem;
   background-color: var(--white);
 }

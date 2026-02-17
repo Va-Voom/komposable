@@ -37,7 +37,7 @@
     "sticky-sidebar": "^3.3.1",
     "@hotwired/stimulus": "^3.2.2",
     "system-font-css": "^2.0.2",
-    "turbolinks": "^5.2.0"
+    "@hotwired/turbo": "^8.0.0"
   },
   "scripts": {
     "lint-staged": "$(yarn bin)/lint-staged"

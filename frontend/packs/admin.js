@@ -3,9 +3,9 @@ import "../components/admin";
 import "../components/blocks";
 
 import Rails from "@rails/ujs";
-import Turbolinks from "turbolinks";
+import * as Turbo from "@hotwired/turbo";
 import * as ActiveStorage from "@rails/activestorage";
 
 Rails.start();
-Turbolinks.start();
+Turbo.start();
 ActiveStorage.start();

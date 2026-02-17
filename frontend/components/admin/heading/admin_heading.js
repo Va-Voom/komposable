@@ -2,7 +2,7 @@ import "./admin_heading.css";
 
 import StickySidebar from 'sticky-sidebar';
 
-document.addEventListener('turbolinks:load', function(){
+document.addEventListener('turbo:load', function(){
 
   if (document.querySelectorAll('.has-sticky-heading').length == 0) return;
 

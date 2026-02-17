@@ -2,7 +2,7 @@ import "./admin_blocks.css";
 
 import Blocks from './blocks_core';
 
-document.addEventListener("turbolinks:load", () => {
+document.addEventListener("turbo:load", () => {
   let blocks = new Blocks(document.querySelector(".js-blocks-component"));
 
   document.addEventListener("blocks:add", function(e) {

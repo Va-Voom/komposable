@@ -1,5 +1,5 @@
 import { Controller } from "@hotwired/stimulus";
-import Turbolinks from "turbolinks";
+import * as Turbo from "@hotwired/turbo";
 
 export default class extends Controller {
   connect() {}
@@ -17,6 +17,6 @@ export default class extends Controller {
     const defaultButton = line.querySelector(".admin-button.is-default-action");
 
     if (!defaultButton) return;
-    Turbolinks.visit(defaultButton.href);
+    Turbo.visit(defaultButton.href);
   }
 }
