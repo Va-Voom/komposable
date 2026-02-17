@@ -1,7 +1,7 @@
 module Komposable
   class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
-    include Pundit
+    include Pundit::Authorization
     after_action :verify_authorized, except: :index
     after_action :verify_policy_scoped, only: :index
     before_action :require_login
