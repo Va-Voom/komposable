@@ -1,6 +1,6 @@
 = c "admin/container", modifiers: "has-sticky-heading"
   = form_for @item, html: {class: "admin-form"} do |f|
-    = c "admin/heading", title: page_title
+    = c "admin/heading", title: title
       = c "admin/button",
           text: t("back", scope: "actions"),
           href: @index_path,

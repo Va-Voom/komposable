@@ -23,7 +23,7 @@ gem "komposable"
 
 # For now, we have to add it manually
 # TODO: include it in the gemspec dependencies
-gem 'meta-tags', github: 'etaminstudio/meta-tags', branch: 'rename-title-helper'
+gem 'meta-tags', '~> 2.22'
 ```
 
 Copy and run the migrations from the engine:

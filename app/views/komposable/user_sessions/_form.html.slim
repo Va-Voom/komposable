@@ -1,5 +1,5 @@
 = c "admin/container"
-  = c "admin/heading", title: page_title
+  = c "admin/heading", title: title
 
   = form_for :user_session, url: {action: "create"}, html: {class: "admin-form"} do |f|
     = c "admin/form/group", label: "Email"
